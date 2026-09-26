@@ -23,5 +23,4 @@ app.delete("/livros", (req, res) => {
     console.log(req.url);    
 });
 
-
 app.listen(3000);
