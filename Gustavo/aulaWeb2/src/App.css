@@ -1,0 +1,16 @@
+body {
+    background-color: azure;
+}
+.sessaoCards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.card {
+    background-color: white;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;            
+    border: 2px solid black;
+}
+
