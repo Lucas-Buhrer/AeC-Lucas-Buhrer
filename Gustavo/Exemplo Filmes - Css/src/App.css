@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #1f2430;
+  color: #e8e8e8;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* ---------- Formulário ---------- */
+.formulario {
+  display: flex;
+  flex-wrap: wrap; /* permite o erro ocupar uma linha inteira embaixo */
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.formulario input {
+  flex: 1;
+  min-width: 160px;
+}
+
+.formulario input,
+.formulario select {
+  padding: 10px;
+  border: 1px solid #444b5c;
+  border-radius: 6px;
+  background: #2b3141;
+  color: #e8e8e8;
+}
+
+.erro {
+  width: 100%;
+  margin: 0;
+  color: #ff6b6b;
+}
+
+/* ---------- Resumo e lista vazia ---------- */
+.resumo {
+  color: #aab;
+}
+
+.vazio {
+  text-align: center;
+  color: #889;
+  padding: 24px;
+}
+
+/* ---------- Lista ---------- */
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: #2b3141;
+  border-left: 5px solid #e0a526;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.genero {
+  color: #aab;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/* Classe condicional: só vale quando assistido === true */
+.filme-assistido {
+  border-left-color: #4caf50;
+  opacity: 0.75;
+}
+
+.filme-assistido strong {
+  text-decoration: line-through;
+}
+
+.selo {
+  align-self: flex-start;
+  background: #4caf50;
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* ---------- Botões ---------- */
+.acoes {
+  display: flex;
+  gap: 6px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #e0a526;
+  color: #1f2430;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button.perigo {
+  background: #e5484d;
+  color: white;
+}

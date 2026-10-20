@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f1ea;
+  color: #2b2b2b;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* ---------- Formulário ---------- */
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.formulario input {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.formulario button {
+  padding: 10px 16px;
+}
+
+.erro {
+  width: 100%;
+  margin: 0;
+  color: #b00020;
+}
+
+/* ---------- Resumo e lista vazia ---------- */
+.resumo {
+  color: #555;
+}
+
+.vazio {
+  text-align: center;
+  color: #888;
+  padding: 24px;
+}
+
+/* ---------- Lista ---------- */
+.lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.livro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  background: white;
+  border-left: 5px solid #8a6d3b;
+  border-radius: 6px;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+}
+
+.livro .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.livro .info span {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Classe condicional: aplicada só quando lido === true */
+.livro-lido {
+  background: #eaf5ea;
+  border-left-color: #2e7d32;
+}
+
+.livro-lido strong {
+  text-decoration: line-through;
+  color: #666;
+}
+
+.selo {
+  align-self: flex-start;
+  background: #2e7d32;
+  color: white !important;
+  font-size: 12px !important;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+/* ---------- Botões ---------- */
+.acoes {
+  display: flex;
+  gap: 6px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #8a6d3b;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button.perigo {
+  background: #b00020;
+}
