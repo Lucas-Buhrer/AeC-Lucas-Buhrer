@@ -1,0 +1,13 @@
+.lista {
+  padding: 0;
+}
+
+.lista li {
+  list-style: none;
+  font-size: 25px;
+}
+
+.botoes {
+  width: 100px;
+  margin: 5px;
+}
